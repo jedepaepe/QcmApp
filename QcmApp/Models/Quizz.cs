@@ -15,14 +15,9 @@ namespace QcmApp.Models
         [Column(TypeName = "nvarchar(128)")]
         public string Title { get; set; }
 
-        //TODO
-        public DateTime Start { get; set; }
-
-        //TODO        
-        public DateTime Finish { get; set; }
-
+        [Required]
         public Course Course { get; set; }
-        
+
         public ICollection<Question> Questions { get; set; }
 
         public ICollection<Test> Tests { get; set; }

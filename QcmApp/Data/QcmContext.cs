@@ -13,7 +13,7 @@ namespace QcmApp.Data
         {
         }
 
-        public DbSet<Answer> Answer { get; set; }
+        public DbSet<Answer> Answers { get; set; }
 
         public DbSet<Course> Course { get; set; }
 
@@ -23,9 +23,7 @@ namespace QcmApp.Data
 
         public DbSet<Quizz> Quizz { get; set; }
 
-        public DbSet<Registration> Registration { get; set; }
-
-        public DbSet<Test> Test { get; set; }
+        public DbSet<Test> Tests { get; set; }
 
         public DbSet<User> User { get; set; }
     }

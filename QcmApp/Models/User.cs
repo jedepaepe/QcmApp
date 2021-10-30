@@ -29,13 +29,9 @@ namespace QcmApp.Models
         [Required]
         public bool role { get; set; }
 
-        // as a teacher, user gives courses
-        public ICollection<Course> GivenCourses { get; set; }
-
         // as a student, user is registred to courses
-        public ICollection<Registration> Registrations { get; set; }
+        public ICollection<Course> Registrations { get; set; }
 
-        // as a student, user pass tests
         public ICollection<Test> Tests { get; set; }
     }
 }

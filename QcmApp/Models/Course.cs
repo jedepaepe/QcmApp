@@ -22,9 +22,7 @@ namespace QcmApp.Models
         [Required]
         public int Capacity { get; set; }
 
-        public User Teacher { get; set; }
-
-        public ICollection<Registration> Registrations { get; set; }
+        public ICollection<User> Registrations { get; set; }
 
         public ICollection<Quizz> Quizzs { get; set; }
     }
